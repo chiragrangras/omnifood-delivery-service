@@ -160,7 +160,7 @@ header {
   padding: 4.8rem 0 3.2rem 0;
 }
 
-.heading-featured-in{
+.heading-featured-in {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.047rem;
@@ -175,7 +175,7 @@ header {
   justify-content: space-around;
 }
 
-.logos img{
+.logos img {
   height: 3.2rem;
   filter: brightness(0);
   opacity: 50%;
@@ -184,23 +184,23 @@ header {
 /************************/
 /* HOW IT WORKS SECTION */
 /************************/
-.section-how{
+.section-how {
   padding: 9.6rem 0;
 }
 
-.step-number{
+.step-number {
   font-size: 8.6rem;
   font-weight: 600;
   color: #ddd;
   margin-bottom: 1.2rem;
 }
 
-.step-description{
+.step-description {
   font-size: 1.8rem;
   line-height: 1.8;
 }
 
-.step-img-box{
+.step-img-box {
   position: relative;
   display: flex;
   align-items: center;
@@ -208,7 +208,7 @@ header {
 }
 
 .step-img-box::before,
-.step-img-box::after{
+.step-img-box::after {
   content: "";
   display: block;
   border-radius: 50%;
@@ -218,7 +218,7 @@ header {
   transform: translate(-50%, -50%);
 }
 
-.step-img-box::before{
+.step-img-box::before {
   width: 60%;
   padding-bottom: 60%;
   background-color: #fdf2e9;
@@ -240,15 +240,86 @@ header {
 /* MEALS SECTION */
 /************************/
 
-.section-meals{
+.section-meals {
   padding: 9.6rem 0;
 }
 
-.meals{
+.meal {
   box-shadow: 0 2.4rem 4.8rem #00000013;
   border-radius: 0.69rem;
   overflow: hidden;
   transition: all 0.4s;
 }
 
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem #00000013;
+}
 
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.meals-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 6.25rem;
+  font-weight: 600;
+}
+
+.tag--vegetarian {
+  background-color: #2ecc71;
+}
+
+.tag--vegan{
+  background-color: #94d82d;
+}
+
+.tag--paleo{
+  background-color: #ffd43d;
+}
+
+.meal-title{
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute{
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.meal-icon{
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
+}
+
+.meal-img{
+  width: 100%;
+}
+
+.all-recipes{
+  text-align: center;
+  font-size: 1.8rem;
+}
