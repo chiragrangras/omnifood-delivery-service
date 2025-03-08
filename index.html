@@ -332,11 +332,11 @@
 
             <div class="container grid grid--2-cols margin-bottom-md">
                 <div class="pricing-plan pricing-plan--starter">
-                    <div class="plan-header">
+                    <header class="plan-header">
                         <p class="plan-name">Starter</p>
                         <p class="plan-price"><span>$</span>399</p>
                         <p class="plan-text">per month. That's just $13 per meal</p>
-                    </div>
+                    </header>
                     <ul class="meal-attributes">
                         <li class="meal-attribute">
                             <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>1 meal per day</span>
@@ -447,12 +447,13 @@
                             </div>
                             <div>
                                 <label for="email">Email address</label>
-                                <input id="email" type="email" placeholder="me@example.com" required />
+                                <input id="email" type="email" placeholder="me@example.com" autocomplete="email"
+                                    required />
                             </div>
                             <div>
                                 <label for="select-where">Where did you hear from us?</label>
                                 <select id="select-where" required>
-                                    <option value="">Please chooses one option:</option>
+                                    <option value="">Please chooses one option :</option>
                                     <option value="friends">Friends and family</option>
                                     <option value="youtube">YouTube video</option>
                                     <option value="podcast">Podcast</option>
@@ -559,6 +560,6 @@
             </nav>
         </div>
     </footer>
-
 </body>
+
 </html>
